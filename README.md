@@ -7,14 +7,30 @@ Kairos is the easist way include **Face-Recognition** technology in your iOS app
 
 ## What You'll Need
 * An iOS app targeting at least iOS version 6.1
-
-
-## Quick Test Run
-* If you just want to do a quick test of Kairos SDK, the example xcode project with the SDK is ready to test out of the box. (1) Just [sign up for a free developer account](https://developer.kairos.io/signup), (2) create an application and copy your appId/appKey, and (3) paste them into the authentication method in AppDelegate.m, (4) run the app, and (5) tap a test button and you'll get a demonstration of one of the API methods.
+* An iOS device (6.1+) with a camera
+* Internet connectivity for your device
 
 
 
-## Installing the Kairos SDK in your App
+---
+
+
+
+## How to do a Quick Demo
+If you just want to do a quick test of Kairos SDK, open the **example project** that is included with the SDK and follow these steps:
+
+1. [Create your free developer account](https://developer.kairos.io/signup)
+2. Log into the Kairos Developer Dashboard
+3. Create an application and copy your **App Id** & **App Key**
+3. Paste them into the authentication method in AppDelegate.m 
+4. Run the app on your device, and tap the test button
+
+
+
+---
+
+
+## How to Install Kairos in your own App
 
 1. [Create your free Kairos developer account](https://developer.kairos.io/signup) if you don't already have one.
 2. Log into the [dashboard](https://developer.kairos.io/admin/applications) and create a new app.
@@ -43,7 +59,7 @@ Kairos is the easist way include **Face-Recognition** technology in your iOS app
 ```
 
 
-## Authenticate
+## Authenticate Once
 
 Before you can make API calls you'll need to authenticate via your appId and appKey (You only need to do this once). Paste your **App Id** and **App Key** into this method:    
 
@@ -116,8 +132,8 @@ UIImage *localImage = [UIImage imageNamed:@"sample.jpg"];
 [KairosSDK recognizeWithImage:localImage
                     threshold:@".75"
                   galleryName:@"gallery1"
-                  maxResults:@"10"
-                     success:^(NSDictionary *response) {
+                   maxResults:@"10"
+                      success:^(NSDictionary *response) {
                               
                           NSLog(@"%@", response);
                       } 
