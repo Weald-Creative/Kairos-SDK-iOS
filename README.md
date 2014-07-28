@@ -54,7 +54,7 @@ Before you can make API calls you'll need to authenticate via your appId and app
 
 ## Enroll
 
-The enroll method registers a photo for later recognitions. Here's an example of enrolling a subject using one of the image-capture methods. This method displays an image-capture view in your app, captures an image of a face, and enrolls it:    
+The enroll method registers a face for later recognitions. Here's an example of enrolling a face (subject) using one of the image-capture methods. This method displays an image-capture view in your app, captures an image of a face, and enrolls it:    
 
 ```
 [KairosSDK imageCaptureEnrollWithSubjectId:@"12" 
