@@ -37,6 +37,8 @@
     [KairosSDK setFaceDetectBoxColorValid:@"CCFF33"];
     [KairosSDK setFaceDetectBoxColorInvalid:@"333333"];
     [KairosSDK setErrorMessageBackgroundColor:@"999900"];*/
+    [KairosSDK setPreferredCameraType:KairosCameraFront];
+    [KairosSDK setEnableShutterSound:NO];
     
 #pragma mark - Kairos SDK (Notifications)
     

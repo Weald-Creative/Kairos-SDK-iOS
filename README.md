@@ -106,6 +106,20 @@ The detect method takes an image of a subject and returns various attributes per
 ```
     
     
+## Configuration & Customization
+
+The Kairos SDK offers options for configuring and customizing the tool to fit your use-case. Below are just a few examples of how you can configure the Kairos SDK. (See KairosSDK.h for the full list of configuration methods):    
+
+```
+    [KairosSDK setPreferredCameraType:KairosCameraFront];
+    [KairosSDK setProgressBarTintColor:@"FFFF00"];
+    [KairosSDK setStillImageTintColor:@"DBDB4D"];
+    [KairosSDK setEnableShutterSound:NO];
+
+```
+
+
+    
 ## Available Notification Events
 Optionally register for Kairos SDK events by adding your controller as an observer to the following SDK notifications:
 
