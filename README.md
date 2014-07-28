@@ -113,7 +113,7 @@ The Kairos SDK offers options for configuring and customizing the tool to fit yo
 ```
     [KairosSDK setPreferredCameraType:KairosCameraFront];
     [KairosSDK setEnableFlash:YES];
-    [KairosSDK setCroppingEnabled:NO];
+    [KairosSDK setEnableCropping:NO];
     [KairosSDK setEnableShutterSound:NO];
     [KairosSDK setStillImageTintColor:@"DBDB4D"];
     [KairosSDK setProgressBarTintColor:@"FFFF00"];

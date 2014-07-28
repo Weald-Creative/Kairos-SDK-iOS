@@ -26,8 +26,8 @@
 		0721D74C1985D03B0062A301 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D74B1985D03B0062A301 /* CoreMedia.framework */; };
 		0721D74E1985D0410062A301 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D74D1985D0410062A301 /* AVFoundation.framework */; };
 		0721D7501985D0450062A301 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D74F1985D0450062A301 /* AudioToolbox.framework */; };
-		0721D7521985D05F0062A301 /* libKairosSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D7511985D05F0062A301 /* libKairosSDK.a */; };
 		0721D7551985E25E0062A301 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0721D7541985E25E0062A301 /* sample.jpg */; };
+		0721D75C1985F9300062A301 /* libKairosSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D75B1985F9300062A301 /* libKairosSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +65,9 @@
 		0721D74B1985D03B0062A301 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		0721D74D1985D0410062A301 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0721D74F1985D0450062A301 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		0721D7511985D05F0062A301 /* libKairosSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKairosSDK.a; path = "../Kairos-SDK-iOS/libKairosSDK.a"; sourceTree = "<group>"; };
-		0721D7531985D0A80062A301 /* KairosSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KairosSDK.h; path = "../Kairos-SDK-iOS/KairosSDK.h"; sourceTree = "<group>"; };
 		0721D7541985E25E0062A301 /* sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample.jpg; path = KairosSDKExampleApp/sample.jpg; sourceTree = "<group>"; };
+		0721D75A1985F9110062A301 /* KairosSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KairosSDK.h; sourceTree = "<group>"; };
+		0721D75B1985F9300062A301 /* libKairosSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKairosSDK.a; path = "../Kairos-SDK-iOS/libKairosSDK.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0721D7521985D05F0062A301 /* libKairosSDK.a in Frameworks */,
+				0721D75C1985F9300062A301 /* libKairosSDK.a in Frameworks */,
 				0721D7501985D0450062A301 /* AudioToolbox.framework in Frameworks */,
 				0721D74E1985D0410062A301 /* AVFoundation.framework in Frameworks */,
 				0721D74C1985D03B0062A301 /* CoreMedia.framework in Frameworks */,
@@ -102,8 +102,8 @@
 		0721D7051985D01C0062A301 = {
 			isa = PBXGroup;
 			children = (
+				0721D75A1985F9110062A301 /* KairosSDK.h */,
 				0721D7541985E25E0062A301 /* sample.jpg */,
-				0721D7531985D0A80062A301 /* KairosSDK.h */,
 				0721D7171985D01C0062A301 /* KairosSDKExampleApp */,
 				0721D7391985D01C0062A301 /* KairosSDKExampleAppTests */,
 				0721D7101985D01C0062A301 /* Frameworks */,
@@ -123,7 +123,7 @@
 		0721D7101985D01C0062A301 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0721D7511985D05F0062A301 /* libKairosSDK.a */,
+				0721D75B1985F9300062A301 /* libKairosSDK.a */,
 				0721D74F1985D0450062A301 /* AudioToolbox.framework */,
 				0721D74D1985D0410062A301 /* AVFoundation.framework */,
 				0721D74B1985D03B0062A301 /* CoreMedia.framework */,
@@ -506,6 +506,7 @@
 				0721D7451985D01C0062A301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0721D7461985D01C0062A301 /* Build configuration list for PBXNativeTarget "KairosSDKExampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +515,7 @@
 				0721D7481985D01C0062A301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

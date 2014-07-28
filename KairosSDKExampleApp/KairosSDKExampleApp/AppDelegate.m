@@ -40,7 +40,6 @@
     
     [KairosSDK setPreferredCameraType:KairosCameraFront];
     [KairosSDK setEnableFlash:YES];
-    [KairosSDK setCroppingEnabled:NO];
     [KairosSDK setEnableShutterSound:NO];
     [KairosSDK setStillImageTintColor:@"DBDB4D"];
     [KairosSDK setProgressBarTintColor:@"FFFF00"];
