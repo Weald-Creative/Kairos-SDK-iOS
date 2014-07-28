@@ -107,7 +107,7 @@ The detect method takes an image of a subject and returns various attributes per
 ```
     
     
-## Configuration & Customization
+## Optional Customization
 
 The Kairos SDK offers options for configuring and customizing the tool to fit your use-case. Below are just a few examples of how you can configure the Kairos SDK. (See KairosSDK.h for the full list of configuration methods):    
 
