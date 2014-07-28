@@ -1,7 +1,7 @@
 Kairos SDK (iOS)
 ==============
 
-Kairos is the easist way include face-recognition technology in your iOS apps. This is the iOS wrapper for the Kairos Face-Recognition API. The package includes both the SDK as well as an example app project. Continue reading to learn how to integrate Kairos into your own iOS app.
+Kairos is the easist way include **Face-Recognition** technology in your iOS apps. This is the iOS wrapper for the Kairos Face-Recognition API. The package includes both the **SDK** as well as an **example app project**. Continue reading to learn how to integrate Kairos into your own iOS app.
 
 
 
@@ -18,12 +18,12 @@ Kairos is the easist way include face-recognition technology in your iOS apps. T
 
 1. [Create your free Kairos developer account](https://developer.kairos.io/signup) if you don't already have one.
 2. Log into the [dashboard](https://developer.kairos.io/admin/applications) and create a new app.
-3. Copy your App ID & AppKey (you'll need them later).
+3. Copy your **App ID** & **App Key** (you'll need them later).
 3. [Download](https://github.com/kairosinc/Kairos-SDK-iOS) the SDK and unzip the package.
-4. Open the folder named 'Kairos-SDK-iOS' which contains the library and header files.
-5. Drag the SDK library file (libKairosSDK.a) into your xcode project.
-6. Drag the SDK header file (KairosSDK.h) into your xcode project.
-5. In the "Build Phases" section of your project target, navigate to "Link Binary with Libraries" and add libKairosSDK.a to the list (if not already there).
+4. Open the folder named **Kairos-SDK-iOS** containing the SDK library and header files.
+5. Drag the SDK library file (**libKairosSDK.a**) into your xcode project.
+6. Drag the SDK header file (**KairosSDK.h**) into your xcode project.
+5. In the "Build Phases" section of your project target, navigate to "**Link Binary with Libraries**" and add libKairosSDK.a to the list (if not already there).
 6. While you're still in "Link Binary with Libraries" add the frameworks: 
 	* UIKit.framework
 	* Foundation.framework
@@ -45,7 +45,7 @@ Kairos is the easist way include face-recognition technology in your iOS apps. T
 
 ## Authenticate
 
-Before you can make API calls you'll need to authenticate via your appId and appKey (You only need to do this once). Use this method to set your appId and appKey:    
+Before you can make API calls you'll need to authenticate via your appId and appKey (You only need to do this once). Paste your **App Id** and **App Key** into this method:    
 
 ```
 [KairosSDK initWithAppId:@"appID" appKey:@"appKey"];
@@ -55,7 +55,7 @@ Before you can make API calls you'll need to authenticate via your appId and app
 
 ## Enroll
 
-The enroll method registers a face for later recognitions. Here's an example of enrolling a face (subject) using one of the image-capture methods. This method displays an image-capture view in your app, captures an image of a face, and enrolls it:    
+The **Enroll** method **registers a face for later recognitions**. Here's an example of enrolling a face (subject) using one of the image-capture methods. This method displays an image-capture view in your app, captures an image of a face, and enrolls it:    
 
 ```
 [KairosSDK imageCaptureEnrollWithSubjectId:@"12" 
@@ -73,7 +73,7 @@ The enroll method registers a face for later recognitions. Here's an example of 
 
 ## Recognize
 
-The recognize method takes an image of a subject and attepmts to find a match for it within a given gallery of previously-enrolled subjects. Here's an example of recognizing a subject using an image-capture method. This method displays an image-capture view in your app, captures an image of a face, sends it to the API, and returns a match and confidence value:    
+The **Recognize** method takes an image of a subject and **attempts to match it against a given gallery of previously-enrolled subjects**. Here's an example of recognizing a subject using an image-capture method. This method displays an image-capture view in your app, captures an image of a face, sends it to the API, and returns a match and confidence value:    
 
 ```
 [KairosSDK imageCaptureRecognizeWithThreshold:@".75"
@@ -92,7 +92,7 @@ The recognize method takes an image of a subject and attepmts to find a match fo
     
 ## Detect
 
-The detect method takes an image of a subject and returns various attributes pertaining to the face features. The detect methods also accept an optional 'selector' parameter, allowing you to tweak the scope of the response ([see docs](https://developer.kairos.io/docs) for more info on the detect selector). Here's an example of using detect via an image-capture method to retrieve the face attributes:    
+The **Detect** method takes an image of a subject and **returns various attributes pertaining to the face features**. The detect methods also accept an optional 'selector' parameter, allowing you to tweak the scope of the response ([see docs](https://developer.kairos.io/docs) for more info on the detect selector). Here's an example of using detect via an image-capture method to retrieve the face attributes:    
 
 ```
 [KairosSDK imageCaptureDetectWithSelector:nil
@@ -145,9 +145,9 @@ Optionally register for Kairos SDK events by adding your controller as an observ
 
 
 
-## Check out the Examples
+## View the Examples
 
-Also see the sample app 'KairosSDKExampleApp' included in the SDK download bundle. It contains clear examples on how to use all of the available methods. Also check out the API documentation at [https://developer.kairos.io/docs](https://developer.kairos.io/docs)
+Also see provided example app 'KairosSDKExampleApp' included in the SDK download bundle. It contains clear examples on how to use all of the available methods. Also check out the API documentation at [https://developer.kairos.io/docs](https://developer.kairos.io/docs)
 
 
 ##Support 
