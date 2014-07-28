@@ -32,18 +32,12 @@
      * of the available options. See the complete  *
      * documentation in KairosSDK.h                *
      ***********************************************
-    [KairosSDK setStillImageTintColor:@"DBDB4D"];
-    [KairosSDK setProgressBarTintColor:@"FFFF00"];
-    [KairosSDK setFaceDetectBoxColorValid:@"CCFF33"];
-    [KairosSDK setFaceDetectBoxColorInvalid:@"333333"];
-    [KairosSDK setErrorMessageBackgroundColor:@"999900"];*/
-    
     [KairosSDK setPreferredCameraType:KairosCameraFront];
     [KairosSDK setEnableFlash:YES];
     [KairosSDK setEnableShutterSound:NO];
     [KairosSDK setStillImageTintColor:@"DBDB4D"];
     [KairosSDK setProgressBarTintColor:@"FFFF00"];
-    [KairosSDK setErrorMessageMoveCloser:@"ちょっと近づいてね"];
+    [KairosSDK setErrorMessageMoveCloser:@"ちょっと近づいてね"];*/
 
     
 #pragma mark - Kairos SDK (Notifications)
