@@ -5,7 +5,7 @@ The iOS wrapper for the Kairos facial recognition API.
 
 
 # Guide
-Kairos is the easist way include face-recognition technology in your iOS apps. This document shows you how to integrate the Kairos SDK into your iOS app.
+Kairos is the easist way include face-recognition technology in your iOS apps. This document shows you how to integrate the Kairos SDK into your own iOS app.
 
 
 
@@ -13,7 +13,12 @@ Kairos is the easist way include face-recognition technology in your iOS apps. T
 * An iOS app targeting at least iOS version 6.1
 
 
-## Installing the SDK
+## Quick Test Run
+* If you just want to do a quick test of Kairos SDK, the example xcode project with the SDK is ready to test out of the box. (1) Just [sign up for a free developer account](https://developer.kairos.io/signup), (2) create an application and copy your appId/appKey, and (3) paste them into the authentication method in AppDelegate.m, (4) run the app, and (5) tap a test button and you'll get a demonstration of one of the API methods.
+
+
+
+## Installing the Kairos SDK in your App
 
 1. [Create your free Kairos developer account](https://developer.kairos.io/signup) if you don't already have one.
 2. Log into the [dashboard](https://developer.kairos.io/admin/applications) and create a new app.
