@@ -72,7 +72,7 @@ The enroll method registers a face for later recognitions. Here's an example of 
 
 ## Recognize
 
-The recognize method takes an image of a subject and tries to find a match for it within a given gallery of previously-enrolled subjects. Here's an example of recognizing a subject using an image-capture method. This method displays an image-capture view in your app, captures an image of a face, sends it to the API, and returns a match and confidence value:    
+The recognize method takes an image of a subject and attepmts to find a match for it within a given gallery of previously-enrolled subjects. Here's an example of recognizing a subject using an image-capture method. This method displays an image-capture view in your app, captures an image of a face, sends it to the API, and returns a match and confidence value:    
 
 ```
 [KairosSDK imageCaptureRecognizeWithThreshold:@".75"
@@ -91,10 +91,10 @@ The recognize method takes an image of a subject and tries to find a match for i
     
 ## Detect
 
-The detect method takes an image of a subject and returns various attributes pertaining to the face features. Here's an example of using detect via an image-capture method. This method displays an image-capture view in your app, captures an image of a face, sends it to the API, and returns the detect attributes:    
+The detect method takes an image of a subject and returns various attributes pertaining to the face features. The detect methods also accept an optional 'selector' parameter, allowing you to tweak the scope of the response ([see docs](https://developer.kairos.io/docs) for more info on the detect selector). Here's an example of using detect via an image-capture method to retrieve the face attributes:    
 
 ```
-[KairosSDK imageCaptureDetectWithSelector:@"SETPOSE"
+[KairosSDK imageCaptureDetectWithSelector:nil
                                   success:^(NSDictionary *response, UIImage *image) 
                                   {
                                   		NSLog(@"%@", response);
