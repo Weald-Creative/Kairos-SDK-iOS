@@ -1,7 +1,7 @@
 Kairos SDK (iOS)
 ==============
 
-Kairos is the easist way include face-recognition technology in your iOS apps. This is the iOS wrapper for the Kairos Face-Recognition API. The package includes both the SDK as well as an example app project. Continue reading to learn how to integrate the Kairos SDK into your own iOS app.
+Kairos is the easist way include face-recognition technology in your iOS apps. This is the iOS wrapper for the Kairos Face-Recognition API. The package includes both the SDK as well as an example app project. Continue reading to learn how to integrate Kairos into your own iOS app.
 
 
 
