@@ -5,9 +5,10 @@
 //  Created by Eric Turner on 3/13/14.
 //  Copyright (c) 2014 Kairos. All rights reserved.
 //
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+
+
 
 /* Notifications You Can Observe */
 extern NSString * const KairosWillShowImageCaptureViewNotification;
@@ -16,9 +17,15 @@ extern NSString * const KairosDidShowImageCaptureViewNotification;
 extern NSString * const KairosDidHideImageCaptureViewNotification;
 extern NSString * const KairosDidCaptureImageNotification;
 
+
+
 @interface KairosSDK : NSObject
 
-#pragma mark - Credentials -
+
+
+#pragma mark - Authentication -
+
+
 
 /*
  * Use this method to set your credentials 
@@ -26,8 +33,14 @@ extern NSString * const KairosDidCaptureImageNotification;
 + (void)initWithAppId:(NSString*)appId appKey:(NSString*)appKey;
 
 
+
 #pragma mark - Image Picker Methods -
-// Note: The following three methods wrap our standard methods with an out-of-the-box image picker controller for your convinience.
+/* Note: 
+ * The following three methods wrap our standard methods 
+ * with an out-of-the-box image picker controller 
+ * for your convinience. */
+
+
 
 /* Takes an image and stores it as a face template into a gallery you define
     @param subjectId The id of the subject
@@ -39,6 +52,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                             galleryName:(NSString*)galleryName
                                 success:(void (^)(NSDictionary * response, UIImage * image))success
                                 failure:(void (^)(NSError* error, UIImage * image))failure;
+
 
 
 /*
@@ -53,6 +67,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                                galleryName:(NSString*)galleryName
                                    success:(void (^)(NSDictionary * response, UIImage * image))success
                                    failure:(void (^)(NSError* error, UIImage * image))failure;
+
 
 
 /* 
@@ -71,8 +86,14 @@ extern NSString * const KairosDidCaptureImageNotification;
                                failure:(void (^)(NSError* error, UIImage * image))failure;
 
 
+
 #pragma mark - Standard Methods -
-// Note: These are the standard methods wrapped with network requests. For more detailed info see the documentation at https://developer.kairos.io/docs
+/* Note:
+ * These are the standard methods wrapped with 
+ * network requests. For more detailed info see 
+ * the documentation at https://developer.kairos.io/docs */
+
+
 
 /*
  * /enroll
@@ -90,6 +111,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                 failure:(void (^)(NSError* error))failure;
 
 
+
 /*
  * /enroll
  * Takes a url to an image and stores it as a face template into a gallery you define.
@@ -104,6 +126,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                galleryName:(NSString*)galleryName
                    success:(void (^)(NSDictionary * response))success
                    failure:(void (^)(NSError* error))failure;
+
 
 
 /*
@@ -123,6 +146,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                    failure:(void (^)(NSError* error))failure;
 
 
+
 /*
  * /recognize
  * Takes a url to an image and tries to match it against the already enrolled images in a gallery you define.
@@ -138,6 +162,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                    maxResults:(NSString*)maxResults
                       success:(void (^)(NSDictionary * response))success
                       failure:(void (^)(NSError* error))failure;
+
 
 
 /*
@@ -178,13 +203,11 @@ extern NSString * const KairosDidCaptureImageNotification;
 
 
 
-
 /*
  * /gallery/list_all
  * Lists out all the galleries you have subjects enrolled in */
 + (void)galleryListAllWithSuccess:(void (^)(NSDictionary * response))success
                         failure:(void (^)(NSError* error))failure;
-
 
 
 
@@ -195,7 +218,6 @@ extern NSString * const KairosDidCaptureImageNotification;
 + (void)galleryView:(NSString*)galleryName
             success:(void (^)(NSDictionary * response))success
             failure:(void (^)(NSError* error))failure;
-
 
 
 
@@ -210,7 +232,10 @@ extern NSString * const KairosDidCaptureImageNotification;
                      failure:(void (^)(NSError* error))failure;
 
 
+
 #pragma mark - Configuration Options -
+
+
 
 /*
  * The minimum amount of frames to wait until capturing an image.
@@ -219,27 +244,32 @@ extern NSString * const KairosDidCaptureImageNotification;
 + (void)setMinimumSessionFrames:(int)frames;
 
 
+
 enum {
     KairosCameraFront                 = 0,
     KairosCameraBack                  = 1
 };
 typedef NSUInteger KairosCameraType;
-
 /*
  * The desired camera to use (if available)
  * (Note: Used only for the image-capture methods)
  * (Note: Default is KairosCameraFront) */
 + (void)setPreferredCameraType:(KairosCameraType)cameraType;
 
+
+
 /*
  * The color of the face detect box when validation is succeesful
  * (Default is green) */
 + (void)setFaceDetectBoxColorValid:(NSString*)hexColorCode;
 
+
+
 /*
  * The color of the face detect box when validation is succeesful
  * (Default is red) */
 + (void)setFaceDetectBoxColorInvalid:(NSString*)hexColorCode;
+
 
 
 /*
@@ -249,11 +279,14 @@ typedef NSUInteger KairosCameraType;
 + (void)setFaceDetectBoxBorderThickness:(NSUInteger)thickness;
 
 
+
 /*
  * The opacity of the border of the face detect box
  * Enter a value between 0.0 to 1.0
  * (Default is 0.325) */
 + (void)setFaceDetectBoxBorderOpacity:(CGFloat)opacity;
+
+
 
 /*
  * Whether or not the captured image is cropped 
@@ -262,17 +295,23 @@ typedef NSUInteger KairosCameraType;
  * (Note: Default is YES) */
 + (void)setEnableCropping:(BOOL)enabled;
 
+
+
 /*
  * The speed (seconds) at which the Image Capture
  * view is animated in. Choose a value between 0-10 secs.
  * (Note: Used only for the image-capture methods) */
 + (void)setShowImageCaptureViewAnimationDuration:(CGFloat)seconds;
 
+
+
 /*
  * The speed (seconds) at which the Image Capture
  * view is animated out. Choose a value between 0-10 secs.
  * (Note: Used only for the image-capture methods) */
 + (void)setHideImageCaptureViewAnimationDuration:(CGFloat)seconds;
+
+
 
 enum {
     
@@ -281,13 +320,14 @@ enum {
     KairosTransitionTypeAlphaAndSlide = 2
 };
 typedef NSUInteger KairosTransitionType;
-
 /*
  * The transition used to 
  * show the Image Capture view.
  * Use one of the KairosTransitionTypes listed above
  * (Note: Used only for the image-capture methods) */
 + (void)setShowImageCaptureViewTransitionType:(KairosTransitionType)type;
+
+
 
 /*
  * The transition used to
@@ -304,7 +344,6 @@ typedef NSUInteger KairosTransitionType;
  * (Note: Used only for the image-capture methods)
  * (Note: Default is NO) */
 + (void)setEnableGrayscaleStills:(BOOL)enabled;
-
 
 
 
@@ -332,7 +371,6 @@ typedef NSUInteger KairosTransitionType;
 
 
 
-
 /*
  * The background color of the error message view
  * (Note: Used only for the image-capture methods)
@@ -341,13 +379,11 @@ typedef NSUInteger KairosTransitionType;
 
 
 
-
 /*
  * The text color of the error message label
  * (Note: Used only for the image-capture methods)
  * (Note: Default is YES) */
 + (void)setErrorMessageTextColor:(NSString*)hexColorCode;
-
 
 
 
@@ -376,6 +412,7 @@ typedef NSUInteger KairosTransitionType;
 + (void)setErrorMessageHoldStill:(NSString*)message;
 
 
+
 /*
  * Error message to display when user is
  * too far away to get an ideal shot.
@@ -400,13 +437,13 @@ enum {
     KairosTransitionTypeBar        = 2
 };
 typedef NSUInteger KairosProgressViewType;
-
 /*
  * The type of progress view used to
  * show a busy state of the Image Capture view
  * after capturing an image.
  * (Note: Used only for the image-capture methods) */
 + (void)setProgressViewTransitionType:(KairosProgressViewType)type;
+
 
 
 /*
@@ -424,6 +461,7 @@ typedef NSUInteger KairosProgressViewType;
 + (void)setProgressBarTintOpacity:(CGFloat)opacity;
 
 
+
 /*
  * Whether to display a flash animation
  * on screen at time of image capture.
@@ -433,13 +471,13 @@ typedef NSUInteger KairosProgressViewType;
 
 
 
-
 /*
  * Whether to play the shutter sound
  * at time of image capture.
  * (Note: Used only for the image-capture methods)
  * (Note: Default is YES) */
 + (void)setEnableShutterSound:(BOOL)enabled;
+
 
 
 @end
