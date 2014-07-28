@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4EFE1FBA-FFDB-43CF-8BB7-0B272511694E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KairosSDKExampleApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>402C470D-F28A-468E-AD4A-80C2B1EFF5C1</key>
+		<string>https://github.com/kairosinc/Kairos-SDK-iOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KairosSDKExampleApp/KairosSDKExampleApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>402C470D-F28A-468E-AD4A-80C2B1EFF5C1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kairosinc/Kairos-SDK-iOS</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>402C470D-F28A-468E-AD4A-80C2B1EFF5C1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>402C470D-F28A-468E-AD4A-80C2B1EFF5C1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KairosSDK-ios-public</string>
+		</dict>
+	</array>
+</dict>
+</plist>
