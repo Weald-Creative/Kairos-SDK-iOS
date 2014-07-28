@@ -53,57 +53,94 @@ Before you can make API calls you'll need to authenticate via your appId and app
 
 
 
-## Enroll
+## Image-Capture & 'Enroll'
 
 The **Enroll** method **registers a face for later recognitions**. Here's an example of enrolling a face (subject) using one of the image-capture methods. This method displays an image-capture view in your app, captures an image of a face, and enrolls it:    
 
 ```
 [KairosSDK imageCaptureEnrollWithSubjectId:@"12" 
                                galleryName:@"gallery1" 
-                                   success:^(NSDictionary *response, UIImage *image) 
-                                   { 
+                                   success:^(NSDictionary *response, UIImage *image) {
+                                    
                                        NSLog(@"%@", response); 
                                    } 
-                                   failure:^(NSError *error, UIImage *image) 
-                                   { 
+                                   failure:^(NSError *error, UIImage *image) {
+                                    
                                        NSLog(@"%@", error.localizedDescription); 
                                    }];
 ```
 
 
-## Recognize
+## Image-Capture & 'Recognize'
 
 The **Recognize** method takes an image of a subject and **attempts to match it against a given gallery of previously-enrolled subjects**. Here's an example of recognizing a subject using an image-capture method. This method displays an image-capture view in your app, captures an image of a face, sends it to the API, and returns a match and confidence value:    
 
 ```
 [KairosSDK imageCaptureRecognizeWithThreshold:@".75"
                                   galleryName:@"gallery1"
-                                      success:^(NSDictionary *response, UIImage *image) 
-                                      {
+                                      success:^(NSDictionary *response, UIImage *image){
+                                      
 											NSLog(@"%@", response);
 									   } 
-									   failure:^(NSError *error, UIImage *image) 
-									   {
+									   failure:^(NSError *error, UIImage *image) {
+									   
                                            NSLog(@"%@", error.localizedDescription);     
                                       }];
 ```
     
     
     
-## Detect
+## Image-Capture & 'Detect'
 
 The **Detect** method takes an image of a subject and **returns various attributes pertaining to the face features**. The detect methods also accept an optional 'selector' parameter, allowing you to tweak the scope of the response ([see docs](https://developer.kairos.io/docs) for more info on the detect selector). Here's an example of using detect via an image-capture method to retrieve the face attributes:    
 
 ```
 [KairosSDK imageCaptureDetectWithSelector:nil
-                                  success:^(NSDictionary *response, UIImage *image) 
-                                  {
+                                  success:^(NSDictionary *response, UIImage *image){
+                                  
                                   		NSLog(@"%@", response);
-                                  } 
-                                  failure:^(NSError *error, UIImage *image) 
-                                  {
+                                  }
+                                  failure:^(NSError *error, UIImage *image){
+                                  
                                       NSLog(@"%@", error.localizedDescription);
                                   }];
+```
+    
+## Standard Methods
+
+The three methods introduced above are all 'Image-Capture' methods. Meaning, they all present a view that captures an image from the camera for you. But if you'd like to provide your own images, or want to develop your own image capture view, Kairos provides unwrapped versions of these methods as well. Below you'll see an example of two flavors of the recognize method, one accepts an image (UIImage), another accepts a URL (NSString) to an external image.
+
+```
+// This recognize method accepts an image
+UIImage *localImage = [UIImage imageNamed:@"sample.jpg"];
+[KairosSDK recognizeWithImage:localImage
+                    threshold:@".75"
+                  galleryName:@"gallery1"
+                  maxResults:@"10"
+                     success:^(NSDictionary *response) {
+                              
+                          NSLog(@"%@", response);
+                      } 
+                      failure:^(NSError *error) {
+                              
+                          NSLog(@"%@", error.localizedDescription);
+                      }];
+                      
+                          
+// This recognize method accepts a url                          
+NSString *imageURL = @"http://media.kairos.com/liz.jpg";
+[KairosSDK recognizeWithImageURL:imageURL
+                       threshold:@".75"
+                     galleryName:@"gallery1"
+                      maxResults:@"10"
+                         success:^(NSDictionary *response) {
+                                 
+                             NSLog(@"%@", response);
+                         } 
+                         failure:^(NSError *error) {
+                                 
+                             NSLog(@"%@", error.localizedDescription);
+                         }];
 ```
     
     
