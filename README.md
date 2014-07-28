@@ -17,7 +17,7 @@ Kairos is the easist way include face-recognition technology in your iOS apps. T
 
 1. [Create your free Kairos developer account](https://developer.kairos.io/signup) if you don't already have one.
 2. Log into the [dashboard](https://developer.kairos.io/admin/applications) and create a new app.
-3. Copy your App ID & Ad Unit Id.
+3. Copy your App ID & AppKey (you'll need them later).
 3. [Download](https://github.com/kairosinc/Kairos-SDK-iOS) the SDK and unzip the package.
 4. Open the folder named 'Kairos-SDK-iOS' which contains the library and header files.
 5. Drag the SDK library file (libKairosSDK.a) into your xcode project.
