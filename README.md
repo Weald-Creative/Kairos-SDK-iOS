@@ -35,7 +35,7 @@ Kairos is the easist way include face-recognition technology in your iOS apps. T
 
 7. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-all_load' if not already present.
   
-8. Import the framework header wherever you want to show an Ad. 
+8. Import the framework header wherever you want to use the SDK
 
 ```
  #import "KairosSDK.h"

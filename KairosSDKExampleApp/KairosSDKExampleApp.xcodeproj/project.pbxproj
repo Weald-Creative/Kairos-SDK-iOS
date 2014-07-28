@@ -421,7 +421,8 @@
 				INFOPLIST_FILE = "KairosSDKExampleApp/KairosSDKExampleApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/eric/Kairos/KairosSDK-ios-public/Kairos-SDK-iOS",
+					"$(SRCROOT)/../Kairos-SDK-iOS/",
+					.,
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,7 +440,8 @@
 				INFOPLIST_FILE = "KairosSDKExampleApp/KairosSDKExampleApp-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/eric/Kairos/KairosSDK-ios-public/Kairos-SDK-iOS",
+					"$(SRCROOT)/../Kairos-SDK-iOS/",
+					.,
 				);
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
