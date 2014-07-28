@@ -6,7 +6,7 @@ Kairos is the easist way include **Face-Recognition** technology in your iOS app
 
 
 ## What You'll Need
-* An iOS app targeting at least iOS version 6.1
+* An XCode iOS app project targeting 6.1 or greater
 * An iOS device (6.1+) with a camera
 * Internet connectivity for your device
 
@@ -17,7 +17,7 @@ Kairos is the easist way include **Face-Recognition** technology in your iOS app
 
 
 ## How to do a Quick Demo
-If you just want to do a quick test of Kairos SDK, open the **example project** that is included with the SDK and follow these steps:
+If you just want to do a quick test run, open the **example project** that is included with the SDK and follow these steps:
 
 1. [Create your free developer account](https://developer.kairos.io/signup)
 2. Log into the Kairos Developer Dashboard
@@ -200,7 +200,7 @@ Optionally register for Kairos SDK events by adding your controller as an observ
 
 ## View the Examples
 
-Also see provided example app 'KairosSDKExampleApp' included in the SDK download bundle. It contains clear examples on how to use all of the available methods. Also check out the API documentation at [https://developer.kairos.io/docs](https://developer.kairos.io/docs)
+Also see provided example app project **KairosSDKExampleApp** included in the SDK download bundle. It contains clear examples on how to use all of the available methods in the file AppDelegate.m. Also, check out the API documentation at [https://developer.kairos.io/docs](https://developer.kairos.io/docs)
 
 
 ##Support 
