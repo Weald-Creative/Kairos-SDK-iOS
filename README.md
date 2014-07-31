@@ -61,7 +61,7 @@ If you just want to do a quick test run, open the **example project** that is in
 
 ## Authenticate Once
 
-Before you can make API calls you'll need to authenticate via your appId and appKey (You only need to do this once). Paste your **App Id** and **App Key** into this method:    
+Before you can make API calls you'll need to pass Kairos your credentials **App Id** and **App Key** (You only need to do this once). Paste your App Id and App Key into the init method initWithAppId:appKey:
 
 ```
 [KairosSDK initWithAppId:@"appID" appKey:@"appKey"];
@@ -80,9 +80,9 @@ The **Enroll** method **registers a face for later recognitions**. Here's an exa
                                     
                                        NSLog(@"%@", response); 
                                    } 
-                                   failure:^(NSError *error, UIImage *image) {
+                                   failure:^(NSDictionary *response, UIImage *image) {
                                     
-                                       NSLog(@"%@", error.localizedDescription); 
+                                       NSLog(@"%@", response); 
                                    }];
 ```
 
@@ -98,9 +98,9 @@ The **Recognize** method takes an image of a subject and **attempts to match it 
                                       
 											NSLog(@"%@", response);
 									   } 
-									   failure:^(NSError *error, UIImage *image) {
+									   failure:^(NSDictionary *response, UIImage *image) {
 									   
-                                           NSLog(@"%@", error.localizedDescription);     
+                                           NSLog(@"%@", response);     
                                       }];
 ```
     
@@ -116,9 +116,9 @@ The **Detect** method takes an image of a subject and **returns various attribut
                                   
                                   		NSLog(@"%@", response);
                                   }
-                                  failure:^(NSError *error, UIImage *image){
+                                  failure:^(NSDictionary *response, UIImage *image){
                                   
-                                      NSLog(@"%@", error.localizedDescription);
+                                      NSLog(@"%@", response);
                                   }];
 ```
     
@@ -137,9 +137,9 @@ UIImage *localImage = [UIImage imageNamed:@"sample.jpg"];
                               
                           NSLog(@"%@", response);
                       } 
-                      failure:^(NSError *error) {
+                      failure:^(NSDictionary *response) {
                               
-                          NSLog(@"%@", error.localizedDescription);
+                          NSLog(@"%@", response);
                       }];
                       
                           
@@ -153,9 +153,9 @@ NSString *imageURL = @"http://media.kairos.com/liz.jpg";
                                  
                              NSLog(@"%@", response);
                          } 
-                         failure:^(NSError *error) {
+                         failure:^(NSDictionary *response) {
                                  
-                             NSLog(@"%@", error.localizedDescription);
+                             NSLog(@"%@", response);
                          }];
 ```
     

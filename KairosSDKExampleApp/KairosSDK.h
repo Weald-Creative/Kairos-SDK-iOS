@@ -28,69 +28,69 @@ extern NSString * const KairosDidCaptureImageNotification;
 
 
 /*
- * Use this method to set your credentials 
+ * Use this method to set your credentials
  * (you only need to do this once) */
 + (void)initWithAppId:(NSString*)appId appKey:(NSString*)appKey;
 
 
 
-#pragma mark - Image Picker Methods -
-/* Note: 
- * The following three methods wrap our standard methods 
- * with an out-of-the-box image picker controller 
+#pragma mark - Image-Capture Methods -
+/* Note:
+ * The following three methods wrap our standard methods
+ * with an out-of-the-box image capture controller
  * for your convinience. */
 
 
 
 /* Takes an image and stores it as a face template into a gallery you define
-    @param subjectId The id of the subject
-    @param galleryName The name of your gallery 
-    @param success Your success block
-    @param failure Your failure block
-    Note: The method returns a JSON response object and a copy of the image sent to the API */
+ @param subjectId The id of the subject
+ @param galleryName The name of your gallery
+ @param success Your success block
+ @param failure Your failure block
+ Note: The method returns a JSON response object and a copy of the image sent to the API */
 + (void)imageCaptureEnrollWithSubjectId:(NSString*)subjectId
                             galleryName:(NSString*)galleryName
                                 success:(void (^)(NSDictionary * response, UIImage * image))success
-                                failure:(void (^)(NSError* error, UIImage * image))failure;
+                                failure:(void (^)(NSDictionary * response, UIImage * image))failure;
 
 
 
 /*
  * /recognize
  * Takes an image and tries to match it against the already enrolled images in a gallery you define.
-   @param threshold The minimum confidence threshold at which to return results (ex. 0.75)
-   @param galleryName The name of your gallery
-   @param success Your success block
-   @param failure Your failure block
-   Note: The method returns a JSON response object and a copy of the image sent to the API */
+ @param threshold The minimum confidence threshold at which to return results (ex. 0.75)
+ @param galleryName The name of your gallery
+ @param success Your success block
+ @param failure Your failure block
+ Note: The method returns a JSON response object and a copy of the image sent to the API */
 + (void)imageCaptureRecognizeWithThreshold:(NSString*)threshold
                                galleryName:(NSString*)galleryName
                                    success:(void (^)(NSDictionary * response, UIImage * image))success
-                                   failure:(void (^)(NSError* error, UIImage * image))failure;
+                                   failure:(void (^)(NSDictionary * response, UIImage * image))failure;
 
 
 
-/* 
+/*
  * /detect
  * Takes an image and returns the facial features found within it.
-   @param selector (Optional) a selector which will enhance the detector with the following options:
-   - FACE: which is the default will provide only the face bounds.
-   - EYES: will return face bounds, plus the eye location.
-   - FULL: (Default) returns all face features.
-   - SETPOSE: Same as FULL but also performs 2D to 3D rendering, pose correction, and normalization.
-   @param success Your success block
-   @param failure Your failure block
-   Note: The method returns a JSON response object and a copy of the image sent to the API */
+ @param selector (Optional) a selector which will enhance the detector with the following options:
+ - FACE: which is the default will provide only the face bounds.
+ - EYES: will return face bounds, plus the eye location.
+ - FULL: (Default) returns all face features.
+ - SETPOSE: Same as FULL but also performs 2D to 3D rendering, pose correction, and normalization.
+ @param success Your success block
+ @param failure Your failure block
+ Note: The method returns a JSON response object and a copy of the image sent to the API */
 + (void)imageCaptureDetectWithSelector:(NSString*)selector
                                success:(void (^)(NSDictionary * response, UIImage * image))success
-                               failure:(void (^)(NSError* error, UIImage * image))failure;
+                               failure:(void (^)(NSDictionary * response, UIImage * image))failure;
 
 
 
 #pragma mark - Standard Methods -
 /* Note:
- * These are the standard methods wrapped with 
- * network requests. For more detailed info see 
+ * These are the standard methods wrapped with
+ * network requests. For more detailed info see
  * the documentation at https://developer.kairos.io/docs */
 
 
@@ -108,7 +108,7 @@ extern NSString * const KairosDidCaptureImageNotification;
               subjectId:(NSString*)subjectId
             galleryName:(NSString*)galleryName
                 success:(void (^)(NSDictionary * response))success
-                failure:(void (^)(NSError* error))failure;
+                failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -125,7 +125,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                  subjectId:(NSString*)subjectId
                galleryName:(NSString*)galleryName
                    success:(void (^)(NSDictionary * response))success
-                   failure:(void (^)(NSError* error))failure;
+                   failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -143,7 +143,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                galleryName:(NSString*)galleryName
                 maxResults:(NSString*)maxResults
                    success:(void (^)(NSDictionary * response))success
-                   failure:(void (^)(NSError* error))failure;
+                   failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -161,7 +161,7 @@ extern NSString * const KairosDidCaptureImageNotification;
                   galleryName:(NSString*)galleryName
                    maxResults:(NSString*)maxResults
                       success:(void (^)(NSDictionary * response))success
-                      failure:(void (^)(NSError* error))failure;
+                      failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -180,7 +180,7 @@ extern NSString * const KairosDidCaptureImageNotification;
 + (void)detectWithImage:(UIImage*)image
                selector:(NSString*)selector
                 success:(void (^)(NSDictionary * response))success
-                failure:(void (^)(NSError* error))failure;
+                failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -199,7 +199,7 @@ extern NSString * const KairosDidCaptureImageNotification;
 + (void)detectWithImageURL:(NSString*)url
                   selector:(NSString*)selector
                    success:(void (^)(NSDictionary * response))success
-                   failure:(void (^)(NSError* error))failure;
+                   failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -207,7 +207,7 @@ extern NSString * const KairosDidCaptureImageNotification;
  * /gallery/list_all
  * Lists out all the galleries you have subjects enrolled in */
 + (void)galleryListAllWithSuccess:(void (^)(NSDictionary * response))success
-                        failure:(void (^)(NSError* error))failure;
+                          failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -217,7 +217,7 @@ extern NSString * const KairosDidCaptureImageNotification;
  @param galleryName The name of your gallery */
 + (void)galleryView:(NSString*)galleryName
             success:(void (^)(NSDictionary * response))success
-            failure:(void (^)(NSError* error))failure;
+            failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -229,7 +229,7 @@ extern NSString * const KairosDidCaptureImageNotification;
 + (void)galleryRemoveSubject:(NSString*)subjectId
                  fromGallery:(NSString*)galleryName
                      success:(void (^)(NSDictionary * response))success
-                     failure:(void (^)(NSError* error))failure;
+                     failure:(void (^)(NSDictionary * response))failure;
 
 
 
@@ -289,7 +289,7 @@ typedef NSUInteger KairosCameraType;
 
 
 /*
- * Whether or not the captured image is cropped 
+ * Whether or not the captured image is cropped
  * to the face detect box bounds before sending to the API.
  * (Note: Used only for the image-capture methods)
  * (Note: Default is YES) */
@@ -321,7 +321,7 @@ enum {
 };
 typedef NSUInteger KairosTransitionType;
 /*
- * The transition used to 
+ * The transition used to
  * show the Image Capture view.
  * Use one of the KairosTransitionTypes listed above
  * (Note: Used only for the image-capture methods) */
@@ -447,8 +447,8 @@ typedef NSUInteger KairosProgressViewType;
 
 
 /*
- * The color of the progress bar 
- * (Note: Used only for the image-capture methods, 
+ * The color of the progress bar
+ * (Note: Used only for the image-capture methods,
  * and progress view of KairosTransitionTypeBar) */
 + (void)setProgressBarTintColor:(NSString*)hexColorCode;
 

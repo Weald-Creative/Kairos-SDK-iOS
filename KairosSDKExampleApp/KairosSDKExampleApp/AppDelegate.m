@@ -87,9 +87,9 @@
                                            
                                            NSLog(@"%@", response);
                                            
-                                       } failure:^(NSError *error, UIImage *image) {
+                                       } failure:^(NSDictionary *response, UIImage *image) {
                                            
-                                           NSLog(@"%@", error.localizedDescription);
+                                           NSLog(@"%@", response);
                                            
                                        }];*/
     
@@ -105,9 +105,9 @@
                                               
                                               NSLog(@"%@", response);
                                               
-                                          } failure:^(NSError *error, UIImage *image) {
+                                          } failure:^(NSDictionary *response, UIImage *image) {
                                               
-                                              NSLog(@"%@", error.localizedDescription);
+                                              NSLog(@"%@", response);
                                               
                                           }];*/
     
@@ -123,7 +123,7 @@
                                           
                                           NSLog(@"%@", response);
                                           
-                                      } failure:^(NSError *error, UIImage *image) {
+                                      } failure:^(NSDictionary *response, UIImage *image) {
                                           
                                           NSLog(@"%@", error.localizedDescription);
                                           
@@ -147,7 +147,7 @@
                            
                            NSLog(@"%@", response);
                            
-                       } failure:^(NSError *error) {
+                       } failure:^(NSDictionary *response) {
                            
                            NSLog(@"%@", error.localizedDescription);
                            
@@ -168,7 +168,7 @@
                               
                               NSLog(@"%@", response);
                               
-                          } failure:^(NSError *error) {
+                          } failure:^(NSDictionary *response) {
                               
                               NSLog(@"%@", error.localizedDescription);
                               
@@ -191,7 +191,7 @@
                               
                               NSLog(@"%@", response);
                               
-                          } failure:^(NSError *error) {
+                          } failure:^(NSDictionary *response) {
                               
                               NSLog(@"%@", error.localizedDescription);
                               
@@ -213,7 +213,7 @@
                                  
                                  NSLog(@"%@", response);
                                  
-                             } failure:^(NSError *error) {
+                             } failure:^(NSDictionary *response) {
                                  
                                  NSLog(@"%@", error.localizedDescription);
                                  
@@ -232,7 +232,7 @@
                            
                            NSLog(@"%@", response);
                            
-                       } failure:^(NSError *error) {
+                       } failure:^(NSDictionary *response) {
                            
                            NSLog(@"%@", error.localizedDescription);
                            
@@ -254,7 +254,7 @@
                               
                               NSLog(@"%@", response);
                               
-                          } failure:^(NSError *error) {
+                          } failure:^(NSDictionary *response) {
                               
                               NSLog(@"%@", error.localizedDescription);
                               
@@ -272,7 +272,7 @@
         
         NSLog(@"%@", response);
         
-    } failure:^(NSError *error) {
+    } failure:^(NSDictionary *response) {
         
         NSLog(@"%@", error.localizedDescription);
         
@@ -292,7 +292,7 @@
                        
                        NSLog(@"%@", response);
                        
-                   } failure:^(NSError *error) {
+                   } failure:^(NSDictionary *response) {
                        
                        NSLog(@"%@", error.localizedDescription);
                        
@@ -312,7 +312,7 @@
                                 
                                 NSLog(@"%@", response);
                                 
-                            } failure:^(NSError *error) {
+                            } failure:^(NSDictionary *response) {
                                 
                                 NSLog(@"%@", error.localizedDescription);
                                 
@@ -345,9 +345,9 @@
                                            // UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
                                            
                                            
-                                       } failure:^(NSError *error, UIImage *image) {
+                                       } failure:^(NSDictionary *response, UIImage *image) {
                                            
-                                           NSLog(@"%@", error.localizedDescription);
+                                           NSLog(@"%@", response);
                                            
                                        }];
     
