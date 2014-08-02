@@ -17,13 +17,13 @@ Kairos is the easist way include **Face-Recognition** technology in your iOS app
 
 
 ## How to do a Quick Demo
-If you just want to do a quick test run, open the **example project** that is included with the SDK and follow these steps:
+If you just want to do a quick test run, open the **example app project** that is included with the SDK and follow these steps:
 
 1. [Create your free developer account](https://developer.kairos.io/signup)
 2. Log into the Kairos Developer Dashboard
 3. Create an application and copy your **App Id** & **App Key**
 3. Paste them into the authentication method in AppDelegate.m 
-4. Run the app on your device, and tap the test button
+4. Run the app on your **device**, and tap the test button (**Note:** At this time the example app only compiles for testing on the device)
 
 
 
@@ -35,12 +35,12 @@ If you just want to do a quick test run, open the **example project** that is in
 1. [Create your free Kairos developer account](https://developer.kairos.io/signup) if you don't already have one.
 2. Log into the [dashboard](https://developer.kairos.io/admin/applications) and create a new app.
 3. Copy your **App ID** & **App Key** (you'll need them later).
-3. [Download](https://github.com/kairosinc/Kairos-SDK-iOS) the SDK and unzip the package.
-4. Open the folder named **Kairos-SDK-iOS** containing the SDK library and header files.
-5. Drag the SDK library file (**libKairosSDK.a**) into your xcode project.
-6. Drag the SDK header file (**KairosSDK.h**) into your xcode project.
-5. In the "Build Phases" section of your project target, navigate to "**Link Binary with Libraries**" and add libKairosSDK.a to the list (if not already there).
-6. While you're still in "Link Binary with Libraries" add the frameworks: 
+4. [Download](https://github.com/kairosinc/Kairos-SDK-iOS) the SDK and unzip the package.
+5. Open the folder named **Kairos-SDK-iOS** containing the SDK library and header files.
+6. Drag the SDK library file (**libKairosSDK.a**) into your xcode project.
+7. Drag the SDK header file (**KairosSDK.h**) into your xcode project.
+8. In the "Build Phases" section of your project target, navigate to "**Link Binary with Libraries**" and add libKairosSDK.a to the list (if not already there).
+9. While you're still in "Link Binary with Libraries" add the frameworks: 
 	* UIKit.framework
 	* Foundation.framework
 	* CoreImage.framework
@@ -50,14 +50,13 @@ If you just want to do a quick test run, open the **example project** that is in
 	* AudioToolbox.framework
 
 
-7. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-all_load' if not already present.
+10. **IMPORTANT**: In the "Build Settings" section of your project target, navigate to "Other Linker Flags" and add '-all_load' if not already present.
   
-8. Import the framework header wherever you want to use the SDK
+11. Import the framework header wherever you want to use the SDK
 
 ```
  #import "KairosSDK.h"
 ```
-
 
 ## Authenticate Once
 
