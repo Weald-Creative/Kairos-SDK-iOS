@@ -21,7 +21,7 @@
      * Don't have an appID/appKey yet? Create a    *
      * free account: https://developer.kairos.io/  *
      ***********************************************/
-    //[KairosSDK initWithAppId:@"appID" appKey:@"appKey"];
+    [KairosSDK initWithAppId:@"10f87749" appKey:@"5683a80e0c5b3845b5b07a027037ddab"];
 
     
 #pragma mark - Kairos SDK (Configuration Options)
