@@ -1,7 +1,7 @@
 Kairos SDK (iOS)
 ==============
 
-Kairos is the easist way add **Face-Recognition** to your iOS apps. Our API provides a full-featured and robust Face-Recognition backend, right out of the box. This is the iOS wrapper for the [Kairos Facial Recognition API](https://developer.kairos.com). The package includes both the **SDK** as well as an **example app project**. Continue reading to learn how to integrate Kairos into your iOS apps.
+Kairos is the easist way add **Face-Recognition** to your iOS apps. Our API provides a full-featured and robust Face-Recognition backend, right out of the box. This is the iOS wrapper for the [Kairos Facial Recognition API](https://www.kairos.com). The package includes both the **SDK** as well as an **example app project**. Continue reading to learn how to integrate Kairos into your iOS apps.
 
 _Thanks to contributions by some of our customers, we also have [Ruby](https://github.com/kany/kairos-api) and [.NET](https://github.com/humbywan/Kairos.Net) wrappers available._
 
@@ -19,7 +19,7 @@ _Thanks to contributions by some of our customers, we also have [Ruby](https://g
 ## How to do a Quick Demo
 If you just want to do a quick test run, open the **example app project** that is included with the SDK and follow these steps:
 
-1. [Create your free developer account](https://developer.kairos.com/signup)
+1. [Create your free developer account](https://www.kairos.com/signup)
 2. Log into the Kairos Developer Dashboard
 3. Create an application and copy your **App Id** & **App Key**
 3. Paste them into the authentication method in AppDelegate.m 
@@ -32,8 +32,8 @@ If you just want to do a quick test run, open the **example app project** that i
 
 ## How to Install Kairos in your own App
 
-1. [Create your free Kairos developer account](https://developer.kairos.com/signup) if you don't already have one.
-2. Log into the [dashboard](https://developer.kairos.com/admin/applications) and create a new app.
+1. [Create your free Kairos developer account](https://www.kairos.com/signup) if you don't already have one.
+2. Log into the [dashboard](https://www.kairos.com/login) and create a new app.
 3. Copy your **App ID** & **App Key** (you'll need them later).
 4. [Download](https://github.com/kairosinc/Kairos-SDK-iOS) the SDK and unzip the package.
 5. Open the folder named **Kairos-SDK-iOS** containing the SDK library and header files.
@@ -107,7 +107,7 @@ The **Recognize** method takes an image of a subject and **attempts to match it 
     
 ## Image-Capture & 'Detect'
 
-The **Detect** method takes an image of a subject and **returns various attributes pertaining to the face features**. The detect methods also accept an optional 'selector' parameter, allowing you to tweak the scope of the response ([see docs](https://developer.kairos.com/docs) for more info on the detect selector). Here's an example of using detect via an image-capture method to retrieve the face attributes:    
+The **Detect** method takes an image of a subject and **returns various attributes pertaining to the face features**. The detect methods also accept an optional 'selector' parameter, allowing you to tweak the scope of the response ([see docs](https://www.kairos.com/docs) for more info on the detect selector). Here's an example of using detect via an image-capture method to retrieve the face attributes:    
 
 ```
 [KairosSDK imageCaptureDetectWithSelector:nil
@@ -199,9 +199,9 @@ Optionally register for Kairos SDK events by adding your controller as an observ
 
 ## View the Examples
 
-Also see provided example app project **KairosSDKExampleApp** included in the SDK download bundle. It contains clear examples on how to use all of the available methods in the file AppDelegate.m. Also, check out the API documentation at [https://developer.kairos.com/docs](https://developer.kairos.com/docs)
+Also see provided example app project **KairosSDKExampleApp** included in the SDK download bundle. It contains clear examples on how to use all of the available methods in the file AppDelegate.m. Also, check out the API documentation at [https://developer.kairos.com/docs](https://www.kairos.com/docs)
 
 [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/kairos-api/kairos-facial-recognition-api)
 
 ##Support 
-Have an issue? [Contact us](mailto:eric@kairos.com) or [create an issue on GitHub](https://github.com/kairosinc/Kairos-SDK-iOS)
+Have an issue? [Contact us](mailto:api@kairos.com) or [create an issue on GitHub](https://github.com/kairosinc/Kairos-SDK-iOS)
