@@ -201,6 +201,7 @@ Optionally register for Kairos SDK events by adding your controller as an observ
 
 Also see provided example app project **KairosSDKExampleApp** included in the SDK download bundle. It contains clear examples on how to use all of the available methods in the file AppDelegate.m. Also, check out the API documentation at [https://developer.kairos.com/docs](https://developer.kairos.com/docs)
 
+[![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/kairos-api/kairos-facial-recognition-api)
 
 ##Support 
 Have an issue? [Contact us](mailto:eric@kairos.com) or [create an issue on GitHub](https://github.com/kairosinc/Kairos-SDK-iOS)
