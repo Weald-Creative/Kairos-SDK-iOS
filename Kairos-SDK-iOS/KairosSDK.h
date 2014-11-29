@@ -91,7 +91,7 @@ extern NSString * const KairosDidCaptureImageNotification;
 /* Note:
  * These are the standard methods wrapped with
  * network requests. For more detailed info see
- * the documentation at https://developer.kairos.io/docs */
+ * the documentation at https://developer.kairos.com/docs */
 
 
 

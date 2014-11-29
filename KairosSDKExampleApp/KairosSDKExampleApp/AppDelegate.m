@@ -19,9 +19,9 @@
     /*************** Authentication ****************
      * Set your credentials once to use the API.   *
      * Don't have an appID/appKey yet? Create a    *
-     * free account: https://developer.kairos.io/  *
+     * free account: https://developer.kairos.com/  *
      ***********************************************/
-    [KairosSDK initWithAppId:@"10f87749" appKey:@"5683a80e0c5b3845b5b07a027037ddab"];
+    [KairosSDK initWithAppId:@"e2a8eaa7" appKey:@"4092e4a45070bca728644e9285f084b4"];
 
     
 #pragma mark - Kairos SDK (Configuration Options)
@@ -80,7 +80,7 @@
      * This /enroll call will display an image     *
      * capture view, and send the captured image   *
      * to the API to enroll the image.             *
-     ***********************************************
+     ***********************************************/
     [KairosSDK imageCaptureEnrollWithSubjectId:@"12"
                                    galleryName:@"gallery1"
                                        success:^(NSDictionary *response, UIImage *image) {
@@ -91,7 +91,7 @@
                                            
                                            NSLog(@"%@", response);
                                            
-                                       }];*/
+                                       }];
     
     
     /********* Image Capture Recognize *************
