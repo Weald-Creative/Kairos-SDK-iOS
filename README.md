@@ -3,7 +3,7 @@ Kairos SDK (iOS)
 
 Kairos is the easist way add **Face-Recognition** to your iOS apps. Our API provides a full-featured and robust Face-Recognition backend, right out of the box. This is the iOS wrapper for the [Kairos Facial Recognition API](https://www.kairos.com). The package includes both the **SDK** as well as an **example app project**. Continue reading to learn how to integrate Kairos into your iOS apps.
 
-_Thanks to contributions by some of our customers, we also have [PHP](https://github.com/kairosinc/Kairos-SDK-PHP), [Ruby](https://github.com/kany/kairos-api) and [.NET](https://github.com/humbywan/Kairos.Net) wrappers available._
+_Thanks to contributions by some of our customers, we also have [Javascript](https://github.com/kairosinc/Kairos-SDK-Javascript) and [PHP](https://github.com/kairosinc/Kairos-SDK-PHP) SDKs, and wrappers for [Ruby](https://github.com/kany/kairos-api) and [.NET](https://github.com/humbywan/Kairos.Net)._
 
 ## What You'll Need
 * An XCode iOS app project targeting 6.1 or greater
