@@ -17,11 +17,8 @@
 		0721D7281985D01C0062A301 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0721D7261985D01C0062A301 /* Main_iPad.storyboard */; };
 		0721D72B1985D01C0062A301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0721D72A1985D01C0062A301 /* ViewController.m */; };
 		0721D72D1985D01C0062A301 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0721D72C1985D01C0062A301 /* Images.xcassets */; };
-		0721D7341985D01C0062A301 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D7331985D01C0062A301 /* XCTest.framework */; };
 		0721D7351985D01C0062A301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D7111985D01C0062A301 /* Foundation.framework */; };
 		0721D7361985D01C0062A301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D7151985D01C0062A301 /* UIKit.framework */; };
-		0721D73E1985D01C0062A301 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0721D73C1985D01C0062A301 /* InfoPlist.strings */; };
-		0721D7401985D01C0062A301 /* KairosSDKExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0721D73F1985D01C0062A301 /* KairosSDKExampleAppTests.m */; };
 		0721D74A1985D0360062A301 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D7491985D0360062A301 /* CoreImage.framework */; };
 		0721D74C1985D03B0062A301 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D74B1985D03B0062A301 /* CoreMedia.framework */; };
 		0721D74E1985D0410062A301 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D74D1985D0410062A301 /* AVFoundation.framework */; };
@@ -57,10 +54,6 @@
 		0721D72A1985D01C0062A301 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0721D72C1985D01C0062A301 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0721D7321985D01C0062A301 /* KairosSDKExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KairosSDKExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0721D7331985D01C0062A301 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		0721D73B1985D01C0062A301 /* KairosSDKExampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KairosSDKExampleAppTests-Info.plist"; sourceTree = "<group>"; };
-		0721D73D1985D01C0062A301 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0721D73F1985D01C0062A301 /* KairosSDKExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KairosSDKExampleAppTests.m; sourceTree = "<group>"; };
 		0721D7491985D0360062A301 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		0721D74B1985D03B0062A301 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		0721D74D1985D0410062A301 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -90,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0721D7341985D01C0062A301 /* XCTest.framework in Frameworks */,
 				0721D7361985D01C0062A301 /* UIKit.framework in Frameworks */,
 				0721D7351985D01C0062A301 /* Foundation.framework in Frameworks */,
 			);
@@ -105,7 +97,6 @@
 				072D6889198AD0DD00EF34D8 /* KairosSDK.h */,
 				0721D7541985E25E0062A301 /* sample.jpg */,
 				0721D7171985D01C0062A301 /* KairosSDKExampleApp */,
-				0721D7391985D01C0062A301 /* KairosSDKExampleAppTests */,
 				0721D7101985D01C0062A301 /* Frameworks */,
 				0721D70F1985D01C0062A301 /* Products */,
 			);
@@ -131,7 +122,6 @@
 				0721D7111985D01C0062A301 /* Foundation.framework */,
 				0721D7131985D01C0062A301 /* CoreGraphics.framework */,
 				0721D7151985D01C0062A301 /* UIKit.framework */,
-				0721D7331985D01C0062A301 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,24 +148,6 @@
 				0721D71A1985D01C0062A301 /* InfoPlist.strings */,
 				0721D71D1985D01C0062A301 /* main.m */,
 				0721D71F1985D01C0062A301 /* KairosSDKExampleApp-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0721D7391985D01C0062A301 /* KairosSDKExampleAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				0721D73F1985D01C0062A301 /* KairosSDKExampleAppTests.m */,
-				0721D73A1985D01C0062A301 /* Supporting Files */,
-			);
-			path = KairosSDKExampleAppTests;
-			sourceTree = "<group>";
-		};
-		0721D73A1985D01C0062A301 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0721D73B1985D01C0062A301 /* KairosSDKExampleAppTests-Info.plist */,
-				0721D73C1985D01C0062A301 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -268,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0721D73E1985D01C0062A301 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0721D7401985D01C0062A301 /* KairosSDKExampleAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,14 +296,6 @@
 				0721D7271985D01C0062A301 /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		0721D73C1985D01C0062A301 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0721D73D1985D01C0062A301 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
