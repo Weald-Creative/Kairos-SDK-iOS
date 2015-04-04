@@ -17,8 +17,6 @@
 		0721D7281985D01C0062A301 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0721D7261985D01C0062A301 /* Main_iPad.storyboard */; };
 		0721D72B1985D01C0062A301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0721D72A1985D01C0062A301 /* ViewController.m */; };
 		0721D72D1985D01C0062A301 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0721D72C1985D01C0062A301 /* Images.xcassets */; };
-		0721D7351985D01C0062A301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D7111985D01C0062A301 /* Foundation.framework */; };
-		0721D7361985D01C0062A301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D7151985D01C0062A301 /* UIKit.framework */; };
 		0721D74A1985D0360062A301 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D7491985D0360062A301 /* CoreImage.framework */; };
 		0721D74C1985D03B0062A301 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D74B1985D03B0062A301 /* CoreMedia.framework */; };
 		0721D74E1985D0410062A301 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0721D74D1985D0410062A301 /* AVFoundation.framework */; };
@@ -26,16 +24,6 @@
 		0721D7551985E25E0062A301 /* sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0721D7541985E25E0062A301 /* sample.jpg */; };
 		072D688F198AD25400EF34D8 /* libKairosSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 072D688E198AD25400EF34D8 /* libKairosSDK.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		0721D7371985D01C0062A301 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0721D7061985D01C0062A301 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0721D70D1985D01C0062A301;
-			remoteInfo = KairosSDKExampleApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0721D70E1985D01C0062A301 /* KairosSDKExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KairosSDKExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,7 +41,6 @@
 		0721D7291985D01C0062A301 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0721D72A1985D01C0062A301 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0721D72C1985D01C0062A301 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0721D7321985D01C0062A301 /* KairosSDKExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KairosSDKExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0721D7491985D0360062A301 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		0721D74B1985D03B0062A301 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		0721D74D1985D0410062A301 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -79,15 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0721D72F1985D01C0062A301 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0721D7361985D01C0062A301 /* UIKit.framework in Frameworks */,
-				0721D7351985D01C0062A301 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				0721D70E1985D01C0062A301 /* KairosSDKExampleApp.app */,
-				0721D7321985D01C0062A301 /* KairosSDKExampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,24 +149,6 @@
 			productReference = 0721D70E1985D01C0062A301 /* KairosSDKExampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0721D7311985D01C0062A301 /* KairosSDKExampleAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0721D7461985D01C0062A301 /* Build configuration list for PBXNativeTarget "KairosSDKExampleAppTests" */;
-			buildPhases = (
-				0721D72E1985D01C0062A301 /* Sources */,
-				0721D72F1985D01C0062A301 /* Frameworks */,
-				0721D7301985D01C0062A301 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0721D7381985D01C0062A301 /* PBXTargetDependency */,
-			);
-			name = KairosSDKExampleAppTests;
-			productName = KairosSDKExampleAppTests;
-			productReference = 0721D7321985D01C0062A301 /* KairosSDKExampleAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,11 +157,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Kairos;
-				TargetAttributes = {
-					0721D7311985D01C0062A301 = {
-						TestTargetID = 0721D70D1985D01C0062A301;
-					};
-				};
 			};
 			buildConfigurationList = 0721D7091985D01C0062A301 /* Build configuration list for PBXProject "KairosSDKExampleApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,7 +172,6 @@
 			projectRoot = "";
 			targets = (
 				0721D70D1985D01C0062A301 /* KairosSDKExampleApp */,
-				0721D7311985D01C0062A301 /* KairosSDKExampleAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,13 +189,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0721D7301985D01C0062A301 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -256,22 +202,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0721D72E1985D01C0062A301 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0721D7381985D01C0062A301 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0721D70D1985D01C0062A301 /* KairosSDKExampleApp */;
-			targetProxy = 0721D7371985D01C0062A301 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0721D71A1985D01C0062A301 /* InfoPlist.strings */ = {
@@ -317,6 +248,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -356,6 +288,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -378,6 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KairosSDKExampleApp/KairosSDKExampleApp-Prefix.pch";
 				INFOPLIST_FILE = "KairosSDKExampleApp/KairosSDKExampleApp-Info.plist";
@@ -397,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KairosSDKExampleApp/KairosSDKExampleApp-Prefix.pch";
 				INFOPLIST_FILE = "KairosSDKExampleApp/KairosSDKExampleApp-Info.plist";
@@ -408,46 +343,6 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		0721D7471985D01C0062A301 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KairosSDKExampleApp.app/KairosSDKExampleApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KairosSDKExampleApp/KairosSDKExampleApp-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		0721D7481985D01C0062A301 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KairosSDKExampleApp.app/KairosSDKExampleApp";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KairosSDKExampleApp/KairosSDKExampleApp-Prefix.pch";
-				INFOPLIST_FILE = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -468,15 +363,6 @@
 			buildConfigurations = (
 				0721D7441985D01C0062A301 /* Debug */,
 				0721D7451985D01C0062A301 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0721D7461985D01C0062A301 /* Build configuration list for PBXNativeTarget "KairosSDKExampleAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0721D7471985D01C0062A301 /* Debug */,
-				0721D7481985D01C0062A301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
