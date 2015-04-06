@@ -3,7 +3,7 @@ Kairos SDK (iOS)
 
 Kairos is the easist way add **Face-Recognition** to your iOS apps. Our API provides a full-featured and robust Face-Recognition backend, right out of the box. This is the iOS wrapper for the [Kairos Facial Recognition API](https://www.kairos.com). The package includes both the **SDK** as well as an **example app project**. Continue reading to learn how to integrate Kairos into your iOS apps.
 
-_Thanks to contributions by some of our customers, we also have [Javascript](https://github.com/kairosinc/Kairos-SDK-Javascript) and [PHP](https://github.com/kairosinc/Kairos-SDK-PHP) SDKs, and wrappers for [Ruby](https://github.com/kany/kairos-api) and [.NET](https://github.com/humbywan/Kairos.Net)._
+_Thanks to contributions by some of our customers, we also have [Javascript](https://github.com/kairosinc/Kairos-SDK-Javascript), [Android](https://github.com/kairosinc/Kairos-SDK-Android) and [PHP](https://github.com/kairosinc/Kairos-SDK-PHP) SDKs, and wrappers for [Ruby](https://github.com/kany/kairos-api) and [.NET](https://github.com/humbywan/Kairos.Net)._
 
 ## What You'll Need
 * An XCode iOS app project targeting 6.1 or greater
@@ -107,7 +107,7 @@ The **Recognize** method takes an image of a subject and **attempts to match it 
     
 ## Image-Capture & 'Detect'
 
-The **Detect** method takes an image of a subject and **returns various attributes pertaining to the face features**. The detect methods also accept an optional 'selector' parameter, allowing you to tweak the scope of the response ([see docs](https://www.kairos.com/docs) for more info on the detect selector). Here's an example of using detect via an image-capture method to retrieve the face attributes:    
+The **Detect** method takes an image of a subject and **returns various attributes pertaining to the face features**. The detect methods also accept an optional 'selector' parameter, allowing you to tweak the scope of the response ([see docs](https://www.kairos.com/docs/face-recognition) for more info on the detect selector). Here's an example of using detect via an image-capture method to retrieve the face attributes:    
 
 ```
 [KairosSDK imageCaptureDetectWithSelector:nil
@@ -199,9 +199,9 @@ Optionally register for Kairos SDK events by adding your controller as an observ
 
 ## View the Examples
 
-Also see provided example app project **KairosSDKExampleApp** included in the SDK download bundle. It contains clear examples on how to use all of the available methods in the file AppDelegate.m. Also, check out the API documentation at [https://developer.kairos.com/docs](https://www.kairos.com/docs)
+Also see provided example app project **KairosSDKExampleApp** included in the SDK download bundle. It contains clear examples on how to use all of the available methods in the file AppDelegate.m. Also, check out the API documentation at [https://developer.kairos.com/docs](https://www.kairos.com/docs/face-recognition)
 
 [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/kairos-api/kairos-facial-recognition-api)
 
 ##Support 
-Have an issue? [Contact us](mailto:api@kairos.com) or [create an issue on GitHub](https://github.com/kairosinc/Kairos-SDK-iOS)
+Have an issue? [Contact us](https://www.kairos.com/contact) or [create an issue on GitHub](https://github.com/kairosinc/Kairos-SDK-iOS)
