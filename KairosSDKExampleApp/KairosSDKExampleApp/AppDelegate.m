@@ -38,6 +38,8 @@
     [KairosSDK setStillImageTintColor:@"DBDB4D"];
     [KairosSDK setProgressBarTintColor:@"FFFF00"];
     [KairosSDK setErrorMessageMoveCloser:@"ちょっと近づいてね"];*/
+    [KairosSDK setPreferredCameraType:KairosCameraBack];
+
 
     
 #pragma mark - Kairos SDK (Notifications)
