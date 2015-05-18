@@ -204,4 +204,4 @@ Also see provided example app project **KairosSDKExampleApp** included in the SD
 [![Stack Share](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](http://stackshare.io/kairos-api/kairos-facial-recognition-api)
 
 ##Support 
-Have an issue? [Contact us](https://www.kairos.com/contact) or [create an issue on GitHub](https://github.com/kairosinc/Kairos-SDK-iOS)
+Have an issue? Visit our [Support page](http://www.kairos.com/support) or [create an issue on GitHub](https://github.com/kairosinc/Kairos-SDK-iOS)
