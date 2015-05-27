@@ -21,7 +21,7 @@
      * Don't have an appID/appKey yet? Create a    *
      * free account: https://developer.kairos.com/  *
      ***********************************************/
-    [KairosSDK initWithAppId:@"e2a8eaa7" appKey:@"4092e4a45070bca728644e9285f084b4"];
+    [KairosSDK initWithAppId:@"your_app_id" appKey:@"your_app_key"];
 
     
 #pragma mark - Kairos SDK (Configuration Options)
@@ -37,8 +37,7 @@
     [KairosSDK setEnableShutterSound:NO];
     [KairosSDK setStillImageTintColor:@"DBDB4D"];
     [KairosSDK setProgressBarTintColor:@"FFFF00"];
-    [KairosSDK setErrorMessageMoveCloser:@"ちょっと近づいてね"];*/
-    [KairosSDK setPreferredCameraType:KairosCameraBack];
+    [KairosSDK setErrorMessageMoveCloser:@"Yo move closer, dude!"];*/
 
 
     
